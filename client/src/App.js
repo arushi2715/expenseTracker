@@ -6,16 +6,12 @@ import Settings from "./pages/Settings";
 import SignUp from "./pages/SignUp";
 import LogIn from "./pages/LogIn";
 import { Routes, Route, Navigate } from "react-router-dom";
-import userData from "./utils/users_data.json";
-
-// const link = "https://resonate-assign-ap54.vercel.app/";
 
 function App() {
   const [newbudget, setnewBudget] = useState(0);
   const [newcategory, setnewCategory] = useState("");
   const [newexpense, setnewExpense] = useState(0);
   const [expenseName, setExpenseName] = useState("");
-  // const [users, setUsers] = useState(userData);
   const [expenses, setExpenses] = useState([]);
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -28,11 +24,8 @@ function App() {
   const [openSnack, setOpenSnack] = useState(false);
 
   async function handleSaveNewExpense() {
-    //API call
-    // e.preventDefault();
     const name = expenseName;
     const expense = newexpense;
-    // console.log(selectedCategory);
 
     const result = await fetch(
       "https://expense-tracker-mu-virid.vercel.app/api/addExpense",
@@ -50,7 +43,6 @@ function App() {
       }
     );
     const data = await result.json();
-    // console.log(data);
 
     if (data.status === false) window.alert(data.message);
     else {
@@ -72,7 +64,6 @@ function App() {
       }
     );
     const data = await result.json();
-    // console.log("getExpense", data.expense);
     if (data.status === false) window.alert(data.message);
     else setExpenses(data.expense);
   }
@@ -116,7 +107,6 @@ function App() {
   }
 
   const handleBudgetChange = (event) => {
-    // console.log(event.target)
     if (event.target.value.length > 0 && event.target.value >= 0)
       setnewBudget(event.target.value);
   };
@@ -126,7 +116,6 @@ function App() {
   };
 
   async function handleAddCategory(event) {
-    //API call
     event.preventDefault();
     const category = newcategory;
     const result = await fetch(
