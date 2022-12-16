@@ -26,6 +26,7 @@ export default function NavBar() {
     localStorage.removeItem("budget");
     setSignedIn(false);
     navigate("/login");
+    window.location.reload();
   }
 
   const handleSettingsClick = () => {
