@@ -30,7 +30,7 @@ function LogIn() {
     e.preventDefault();
     const { email, password } = user;
     const result = await fetch(
-      "https://resonate-assign.vercel.app/auth/signin",
+      "https://expense-tracker-mu-virid.vercel.app/auth/signin",
       {
         method: "POST",
         headers: {

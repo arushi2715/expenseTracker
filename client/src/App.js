@@ -35,7 +35,7 @@ function App() {
     // console.log(selectedCategory);
 
     const result = await fetch(
-      "https://resonate-assign-ap54-du80j71d6-arushi2715.vercel.app/api/addExpense",
+      "https://expense-tracker-mu-virid.vercel.app/api/addExpense",
       {
         method: "POST",
         headers: {
@@ -63,7 +63,7 @@ function App() {
 
   async function getExpenses() {
     const result = await fetch(
-      "https://resonate-assign-ap54-du80j71d6-arushi2715.vercel.app/api/getExpense",
+      "https://expense-tracker-mu-virid.vercel.app/api/getExpense",
       {
         method: "GET",
         headers: {
@@ -102,7 +102,7 @@ function App() {
 
   async function getCategories() {
     const result = await fetch(
-      "https://resonate-assign-ap54-du80j71d6-arushi2715.vercel.app/api/getCategories",
+      "https://expense-tracker-mu-virid.vercel.app/api/getCategories",
       {
         method: "GET",
         headers: {
@@ -130,7 +130,7 @@ function App() {
     event.preventDefault();
     const category = newcategory;
     const result = await fetch(
-      "https://resonate-assign-ap54-du80j71d6-arushi2715.vercel.app/api/addCategories",
+      "https://expense-tracker-mu-virid.vercel.app/api/addCategories",
       {
         method: "POST",
         headers: {
@@ -154,7 +154,7 @@ function App() {
     event.preventDefault();
     const budget = newbudget;
     const result = await fetch(
-      "https://resonate-assign-ap54-du80j71d6-arushi2715.vercel.app/api/addBudget",
+      "https://expense-tracker-mu-virid.vercel.app/api/addBudget",
       {
         method: "POST",
         headers: {
@@ -222,7 +222,7 @@ function App() {
     const name = selectedExpenseName;
     const expense = selectedExpenseAmount;
     const result = await fetch(
-      "https://resonate-assign-ap54.vercel.app/api/editExpense/" +
+      "https://expense-tracker-mu-virid.vercel.app/api/editExpense/" +
         selectedExpenseId,
       {
         method: "PATCH",
@@ -248,7 +248,7 @@ async function handleDeleteExpense(id) {
     console.log("hyee");
     setSelectedExpenseId(id);
     const result = await fetch(
-      "https://resonate-assign-ap54.vercel.app/api/deleteExpense/" + id,
+      "https://expense-tracker-mu-virid.vercel.app/api/deleteExpense/" + id,
       {
         method: "PATCH",
         headers: {
