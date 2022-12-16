@@ -22,6 +22,7 @@ exports.signIn = async (req, res) => {
       { email: userExists.email, password: userExists.password },
       process.env.SECRET_KEY
     );
+
     return res.status(200).json({
       status: true,
       token: token,

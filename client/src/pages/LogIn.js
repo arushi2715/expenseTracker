@@ -53,8 +53,8 @@ function LogIn() {
     } else {
       if (data.token) {
         localStorage.setItem("token", data.token);
-        navigate("/settings");
         window.alert(data.message);
+        navigate("/settings");
         // window.location.reload();
       } else {
         window.alert("There was some error, Please try again later.");

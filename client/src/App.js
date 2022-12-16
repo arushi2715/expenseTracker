@@ -46,7 +46,6 @@ function App() {
 
     if (data.status === false) window.alert(data.message);
     else {
-      window.alert(data.message);
       setExpenseName(name);
       setnewExpense(newexpense);
       getExpenses();
@@ -314,7 +313,7 @@ function App() {
             localStorage.getItem("token") === null ? (
               <SignUp />
             ) : (
-              <Settings {...settingsProps} />
+              <Dashboard {...dashboardProps} />
             )
           }
         />
