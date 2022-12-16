@@ -1,0 +1,95 @@
+[{
+  "_id": {
+    "$oid": "639774ed957cf477ca174e4c"
+  },
+  "name": "user1",
+  "email": "user1@gmail.com",
+  "password": "$2b$10$YhSE6e1d/ChfoJ6Xu7fbLO4EVsbJiSdVc79gtq4vqStz5PHu6yz9G",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6397756e851a9dbafe0fa5ca"
+  },
+  "name": "user2",
+  "email": "user2@gmail.com",
+  "password": "$2b$10$YDokRDHp7LAcoMhLOvu0Cu4UbF7TAsr9Mu3HKiiyb7vQ9EfvDrDRO",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639775ca851a9dbafe0fa5cd"
+  },
+  "name": "user3",
+  "email": "user3@gmail.com",
+  "password": "$2b$10$p5/RMpun0s6oa8J4PN3hC.NBfap1VdADbBqUcQUOLX2WPeCvfnTxa",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639775de851a9dbafe0fa5d1"
+  },
+  "name": "user3",
+  "email": "user4@gmail.com",
+  "password": "$2b$10$MZ3E/G0iHXqfC6TvxKS/x.YVUPl/hT96La5kFNxH1scyUJUBn8SuG",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639776339b26c851b6cbf3b0"
+  },
+  "name": "user3",
+  "email": "user5@gmail.com",
+  "password": "$2b$10$TvofzsXorR7Oq.LVbRxjRuO5dAAUSVN3ikn8vRV4oD3uRYKrOvCdS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639776429b26c851b6cbf3b3"
+  },
+  "name": "user3",
+  "email": "user6@gmail.com",
+  "password": "$2b$10$Mc4ZsrxUy48Q1lF8BONlD.Hmuk79OdFigRh/5pMlee8JWu0syhU6a",
+  "__v": 0,
+  "budget": "5000"
+},{
+  "_id": {
+    "$oid": "63977d2763c6cb4c6a435cbc"
+  },
+  "name": "user3",
+  "email": "user7@gmail.com",
+  "password": "$2b$10$HAbzGVplC7GSjVIXeZueRu9XPzeA1Iwzs0M9WPc5MBGuswjx8DFaC",
+  "__v": 0,
+  "budget": "5000"
+},{
+  "_id": {
+    "$oid": "63977db02adb193f9cdbc87b"
+  },
+  "name": "user3",
+  "email": "user8@gmail.com",
+  "password": "$2b$10$JsgToJXM/mn41OCsNATj8uD/X/loc7zusnOrLYSMcq4L/cruZ7F8e",
+  "__v": 0,
+  "budget": "5000"
+},{
+  "_id": {
+    "$oid": "63977e3fefd7ff573cbe97b4"
+  },
+  "name": "user3",
+  "email": "user9@gmail.com",
+  "password": "$2b$10$LpmU8OlWVgLpobugewzFy.RZNydXMgjDiSywfjpvtEjI4GaKuKPci",
+  "__v": 0,
+  "budget": "5000"
+},{
+  "_id": {
+    "$oid": "63977e7d851e119b13629de2"
+  },
+  "name": "user3",
+  "email": "user10@gmail.com",
+  "password": "$2b$10$9F67B/5rr/LbeIxGOfxcCehehJuDgPB6HU2OwgYYeSNe1HL341n..",
+  "__v": 0,
+  "budget": "5000"
+},{
+  "_id": {
+    "$oid": "6398214a104efcac69e69a42"
+  },
+  "name": "user3",
+  "email": "user0@gmail.com",
+  "password": "$2b$10$AdMTS0fbpuABxmt5IVA6zemRLTjR0HcMSqYFnCN3U4oBVwid.DqLO",
+  "__v": 0,
+  "budget": "5000"
+}]

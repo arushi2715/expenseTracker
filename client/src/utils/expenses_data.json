@@ -1,0 +1,118 @@
+[{
+  "_id": {
+    "$oid": "63981ace07cf41e8deac1f97"
+  },
+  "name": "food",
+  "expense": 100,
+  "categoryId": {
+    "$oid": "63981558ba9f58cfe1aa3eaf"
+  },
+  "userId": {
+    "$oid": "63977e7d851e119b13629de2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63981ad907cf41e8deac1f9a"
+  },
+  "name": "food1",
+  "expense": 100,
+  "categoryId": {
+    "$oid": "63981558ba9f58cfe1aa3eaf"
+  },
+  "userId": {
+    "$oid": "63977e7d851e119b13629de2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63981afb6e28cde7e721cf28"
+  },
+  "name": "food1",
+  "expense": 100,
+  "categoryId": {
+    "$oid": "63981558ba9f58cfe1aa3eaf"
+  },
+  "userId": {
+    "$oid": "63977e7d851e119b13629de2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639821e1d0697b8ad3d0053d"
+  },
+  "name": "food1",
+  "expense": 100,
+  "categoryId": {
+    "$oid": "63981558ba9f58cfe1aa3eaf"
+  },
+  "userId": {
+    "$oid": "63977e7d851e119b13629de2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639822030216a6adf2584b60"
+  },
+  "name": "food1",
+  "expense": 100,
+  "categoryId": {
+    "$oid": "63981558ba9f58cfe1aa3eaf"
+  },
+  "userId": {
+    "$oid": "63977e7d851e119b13629de2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63982225e5f4ce5dd911fc01"
+  },
+  "name": "food1",
+  "expense": 100,
+  "categoryId": {
+    "$oid": "63981558ba9f58cfe1aa3eaf"
+  },
+  "userId": {
+    "$oid": "63977e7d851e119b13629de2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639822983402ccb7c4100956"
+  },
+  "name": "food1",
+  "expense": 100,
+  "categoryId": {
+    "$oid": "63981558ba9f58cfe1aa3eaf"
+  },
+  "userId": {
+    "$oid": "63977e7d851e119b13629de2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63982afd56ab0bf3502369a8"
+  },
+  "name": "food1",
+  "expense": 100,
+  "categoryId": {
+    "$oid": "63981558ba9f58cfe1aa3eaf"
+  },
+  "userId": {
+    "$oid": "63977e7d851e119b13629de2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639845248dc7d46c677e45f4"
+  },
+  "name": "food8",
+  "expense": 100,
+  "categoryId": {
+    "$oid": "63984209fb3ee73ade2ac65c"
+  },
+  "userId": {
+    "$oid": "6398214a104efcac69e69a42"
+  },
+  "__v": 0
+}]
