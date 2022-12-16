@@ -6,7 +6,7 @@ function LogIn() {
   const navigate = useNavigate();
   const [user, setUser] = useState({ email: "", password: "" });
 
-  console.log("hyee");
+  // console.log("hyee");
 
   function handleChange(event) {
     const { value, name } = event.target;
@@ -45,7 +45,7 @@ function LogIn() {
 
     const data = await result.json();
 
-    console.log(data);
+    // console.log(data);
 
     if (data.status === false) {
       window.alert(data.message);
@@ -55,7 +55,7 @@ function LogIn() {
         localStorage.setItem("token", data.token);
         navigate("/settings");
         window.alert(data.message);
-        window.location.reload();
+        // window.location.reload();
       } else {
         window.alert("There was some error, Please try again later.");
       }

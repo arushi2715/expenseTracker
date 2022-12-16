@@ -223,7 +223,7 @@ function App() {
     );
 
     const data = await result.json();
-    console.log(data);
+    // console.log(data);
     if (data.status == false) {
       window.alert(data.message);
     } else {
@@ -232,9 +232,9 @@ function App() {
     }
     setOpenDialog(false);
   }
-async function handleDeleteExpense(id) {
+  async function handleDeleteExpense(id) {
     //API call
-    console.log("hyee");
+    // console.log("hyee");
     setSelectedExpenseId(id);
     const result = await fetch(
       "https://expense-tracker-mu-virid.vercel.app/api/deleteExpense/" + id,
@@ -308,10 +308,37 @@ async function handleDeleteExpense(id) {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path="/" element={ localStorage.getItem("token")===null?<SignUp />:<Dashboard {...dashboardProps} /> } />
+        <Route
+          path="/"
+          element={
+            localStorage.getItem("token") === null ? (
+              <SignUp />
+            ) : (
+              <Settings {...settingsProps} />
+            )
+          }
+        />
         <Route path="/login" element={<LogIn />} />
-        <Route path="/settings" element={ localStorage.getItem("token")===null?<LogIn /> : <Settings {...settingsProps} />} />
-        <Route path="/dashboard" element={localStorage.getItem("token")===null?<LogIn /> : <Dashboard {...dashboardProps} />} />
+        <Route
+          path="/settings"
+          element={
+            localStorage.getItem("token") === null ? (
+              <LogIn />
+            ) : (
+              <Settings {...settingsProps} />
+            )
+          }
+        />
+        <Route
+          path="/dashboard"
+          element={
+            localStorage.getItem("token") === null ? (
+              <LogIn />
+            ) : (
+              <Dashboard {...dashboardProps} />
+            )
+          }
+        />
       </Routes>
     </div>
   );

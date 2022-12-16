@@ -67,7 +67,7 @@ function SignUp() {
         localStorage.setItem("token", data.token);
         navigate("/settings");
         window.alert(data.message);
-        window.location.reload();
+        // window.location.reload();
       } else {
         window.alert("There was some error, Please try again later.");
       }
