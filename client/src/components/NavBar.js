@@ -11,22 +11,23 @@ import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import { useNavigate } from "react-router-dom";
 
 export default function NavBar() {
+  const navigate = useNavigate();
   const [isSignedIn, setSignedIn] = React.useState(false);
 
   React.useEffect(() => {
-    if (localStorage.getItem("token")!==null) {
-      console.log("auth")
+    if (localStorage.getItem("token") !== null) {
+      console.log("auth");
       setSignedIn(true);
     }
   }, [isSignedIn]);
 
   async function userLogOut() {
     localStorage.removeItem("token");
+    localStorage.removeItem("budget");
     setSignedIn(false);
     navigate("/login");
   }
 
-  const navigate = useNavigate();
   const handleSettingsClick = () => {
     navigate("/settings");
   };
