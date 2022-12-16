@@ -300,6 +300,7 @@ function App() {
     if (localStorage.getItem("token")) {
       getCategories();
       getExpenses();
+      setnewBudget(localStorage.getItem("budget"));
     }
   }, []);
 
@@ -317,7 +318,16 @@ function App() {
             )
           }
         />
-        <Route path="/login" element={<LogIn />} />
+        <Route
+          path="/login"
+          element={
+            localStorage.getItem("token") === null ? (
+              <LogIn />
+            ) : (
+              <Settings {...settingsProps} />
+            )
+          }
+        />
         <Route
           path="/settings"
           element={
