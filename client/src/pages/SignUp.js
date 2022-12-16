@@ -6,7 +6,6 @@ function SignUp() {
   const navigate = useNavigate();
   const [user, setUser] = useState({ username: "", email: "", password: "" });
 
-  // console.log("hyee");
 
   function handleChange(event) {
     const { value, name } = event.target;
