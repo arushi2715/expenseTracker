@@ -114,7 +114,7 @@ After successfully adding the expense, a pie chart and a bar graph is generated 
    ```sh
    cd server
    ```
-6. Make a `.env` file following the `.example.env` file.
+6. Make a `.env` file following the `example.env` file.
 7. Start the backend server
     ```sh
    npm start
